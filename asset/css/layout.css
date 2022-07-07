@@ -1,0 +1,419 @@
+@import url(./reset.css);
+@import url(./common.css);
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1010;
+}
+header .inner {
+    display: flex;
+    height: 64px;
+    padding: 0 104px 0 98px;
+    box-sizing: border-box;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .logo a {
+    display: block;
+    background-position: -105px 0px;
+    width: 223px;
+    height: 35px;
+}
+header .gnb {
+    display: flex;
+    align-items: stretch;
+    margin-left: 29px;
+}
+header .gnb-list {
+    display: flex;
+}
+header .gnb.active::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 64px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.98);
+    height: 182px;
+    z-index: -1;
+}
+header .gnb-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header .gnb-item a {
+    display: block;
+    padding: 0 10px;
+    font-size: 17px;
+    letter-spacing: -0.36px;
+    line-height: 32px;
+    white-space: nowrap;
+}
+header .gnb .gnb-depth2 {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 10;
+
+
+    display: none;
+}
+header .gnb-depth2 .depth2-item {
+    display: flex;
+    align-items: center;
+}
+header .gnb-depth2 a {
+    padding: 3px 13px;
+}
+header .gnb-item .text {
+    position: relative;
+}
+header .gnb-item .text:hover:after,
+header .gnb-item .text:focus:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: #000;
+}
+header .utils-area {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+}
+header .utils-area a {
+    display: block;
+    padding: 0 10px;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+}
+header .utils-area .text {
+    position: relative;
+}
+header .utils-area .text:hover:after,
+header .utils-area .text:focus:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: #000;
+}
+
+footer {
+    background-color: #f2f2f2;
+}
+footer .inner {
+    padding: 25px 104px 25px 98px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+footer .corp {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.32px;
+    color: #000;
+}
+footer .corp a {
+    display: block;
+}
+footer .policy {
+    margin-left: 30px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.28px;
+    color: #909090;
+    font-weight: bold;
+}
+footer .corp-site {
+    margin-left: auto;
+    position: relative;
+}
+footer .link-site {
+    position: relative;
+    width: 280px;
+    display: inline-block;
+    line-height: 42px;
+    text-align: left;
+    background-color: #f2f2f2;
+}
+footer .link-site::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #000;
+}
+footer .link-site::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 0;
+    background-position: -122px -93px;
+    width: 10px;
+    height: 6px;
+    z-index: 100;
+}
+footer .site-list {
+    position: absolute;
+    bottom: 42px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1000;
+
+    display: none;
+}
+footer .corp-site.active .site-item {
+    font-size: 18px;
+    line-height: 42px;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+footer .site-item a {
+    display: block;
+}
+/* 스크립트------------ */
+footer .corp-site.active .link-site {
+    background: #fff;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+footer .corp-site.active .site-list {
+    display: block;
+}
+footer .corp-site.active .link-site::before {
+    transform: rotate(180deg);
+    right: 5px;
+}
+footer .corp-site.active .link-site::after {
+    display: none;
+}
+
+/* 모바일 */
+header .tab-wrap {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    display: none;
+}
+header .tab-wrap button {
+    background-image: url(../images/sp_mo.png);
+    background-size: 195px 181px;
+    background-position: -85px -28px;
+    width: 20px;
+    height: 14px;
+}
+
+
+header .mo-gnb {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+}
+header .mognb-wrap {
+    display: block;
+    position: fixed;
+    z-index: 1010;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+header .mognb-list {
+    padding: 11px 0 9px;
+}
+header .mognb-item {
+    font-size: 22px;
+    line-height: 46px;
+    letter-spacing: -0.44px;
+}
+header .mognb-item > a {
+    display: block;
+    padding: 0 22px;
+}
+header .mognb-item .ic-arrow {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0 0 4px;
+    background-image: url(../images/sp_mo.png);
+    background-size: 195px 181px;
+    background-position: -136px -49px;
+    width: 10px;
+    height: 6px;
+}
+header .mognb-item .mognb-depth2 {
+    padding: 3px 22px 15px;
+
+    display: none;
+}
+header .mognb-depth2 .depth2-item {
+    margin-top: 13px;
+}
+header .mognb-depth2 .depth2-item a {
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.36px;
+    background-color: #fff;
+    font-weight: normal;
+    display: block;
+}
+header .mognb-list+.mognb-list {
+    position: relative;
+    padding: 10px 0 11px;
+}
+header .mognb-list+.mognb-list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 22px;
+    right: 22px;
+    height: 1px;
+    background-color: #d0d0d0;
+}
+header .mognb-list > a {
+    font-size: 22px;
+    line-height: 46px;
+    letter-spacing: -0.44px;
+    display: block;
+    padding: 0 22px;
+}
+/* 스크립트 */
+body.active {
+    overflow-y: hidden;
+}
+header .mo-gnb.active {
+    pointer-events: all;
+}
+header .mo-gnb.active .mognb-wrap {
+    transform: translateX(0);
+}
+header .mognb-item.active > a {
+    background-color: #f2f2f2;
+}
+header .mognb-item.active .ic-arrow {
+    transform: rotate(-180deg);
+}
+header .mognb-item.active .mognb-depth2 {
+    display: block;
+}
+header .tab-wrap button.btn-close {
+    background-image: url(../images/sp_mo.png);
+    background-size: 195px 181px;
+    background-position: -85px -49px;
+    width: 15px;
+    height: 15px;
+}
+@media screen and (max-width: 1408px) {
+    /* 1023까지잡혀야함 */
+
+}
+@media screen and (max-width: 1023px) {
+  /* 767까지잡혀야함 */
+  /* 테블릿 */
+
+    header .inner {
+        padding: 0 22px;
+        height: 60px;
+    }
+    header .logo a {
+        background-image: url(../images/sp_mo.png);
+        background-size: 195px 181px;
+        background-position: 0px 0px;
+        width: 160px;
+        height: 23px;
+    }
+    header .gnb {
+        display: none;
+    }
+    header .utils-area {
+        display: none;
+    }
+    header .tab-wrap {
+        display: flex;
+    }
+    footer {
+        padding: 25px 0 29px;
+    }
+    footer .inner {
+        padding: 0 22px;
+        display: block;
+    }
+    footer .corp {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.3px;
+    }
+    footer .policy {
+        margin-left: 21px;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.28px;
+        color: #909090;
+    }
+    footer .link-site {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 12px;
+        color: #1d1d1d;
+        line-height: 40px;
+        display: block;
+    }
+    footer .link-site::before {
+        top: 20px;
+        right: -2px;
+        background-image: url(../images/sp_mo.png);
+        background-size: 195px 181px;
+        background-position: -136px -49px;
+        width: 10px;
+        height: 6px;
+    }
+    footer .link-site::after {
+        background-color: #b4b4b4;
+    }
+    footer .site-list {
+        bottom: 40px;
+    }
+    footer .corp-site.active .site-item {
+        font-size: 12px;
+        color: #1d1d1d;
+    }
+    footer .corp-site.active .link-site::before {
+        right: 10px;
+    }
+}
+@media screen and (max-width: 767px) { 
+  /* 320까지잡혀야함 */
+  /* 모바일 ~ 더나와도됨 480 등등 필요하면 더 가능 */
+}

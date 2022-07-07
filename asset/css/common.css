@@ -1,0 +1,151 @@
+body, input, select, textarea, button {
+    color: #000;
+    font-family: 'TTHoves', 'NanumSquare', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    appearance: none;
+    -moz-appearance: none; /* Firefox */ 
+    -webkit-appearance: none; /* Safari and Chrome */
+}
+header .logo a,
+.top-banner button,
+.sc-team .keyword-search .txt::before,
+.sc-team .recruit-area .ic-search,
+.sc-team .team-item .more::after,
+section .btn-left,
+section .btn-right,
+.sc-board .desc .ic-link,
+footer .link-site::before,
+section .btn-left.active,
+section .btn-right.active,
+.mo-lnb .mo-searchbox .ic-search,
+.mo-lnb .select-list .ic-arrow  {
+    background-image: url(../images/sp_pc.png);
+    background-size: 328px 205px;
+}
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    margin: -1px;
+}
+.inner {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+.inner1 {
+    max-width: 1408px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 104px;
+    box-sizing: border-box;
+}
+section .keytitle {
+    font-size: 64px;
+    line-height: 71px;
+    letter-spacing: -0.64px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+section .title-desc {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 30px;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.44px;
+    font-weight: bold;
+}
+section .link-more {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    letter-spacing: -0.36px;
+}
+section .link-more::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #000;
+}
+section .inner1 > div {
+    position: relative;
+    padding-bottom: 68px;
+}
+section .swiper-button-prev,
+section .swiper-button-next {
+    position: static;
+    color: transparent;
+    opacity: 1;
+}
+section .swiper-button-next:after,
+section .swiper-button-prev:after {
+    font-size: 0;
+}
+section .btn-left {
+    background-position: -187px -172px;
+
+    /* background-position: -224px -172px; */
+    height: 32px;
+    width: 33px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 55px;
+    left: auto;
+    top: auto;
+}
+section .btn-right {
+    /* right: 15px; */
+    background-position: -113px -172px;
+
+    /* background-position: -150px -172px; */
+    height: 32px;
+    width: 33px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    top: auto;
+}
+section .swiper-button-prev.swiper-button-disabled {
+    background-position: -224px -172px;
+    height: 32px;
+    width: 33px;
+    display: inline-block;
+    opacity: 1;
+}
+section .swiper-button-next.swiper-button-disabled {
+    background-position: -150px -172px;
+    height: 32px;
+    width: 33px;
+    display: inline-block;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+section .txt-box {
+    margin-top: 29px;
+}
+section .txt-box .title {
+    display: inline;
+    padding-right: 26px;
+    line-height: 36px;
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+}
