@@ -218,7 +218,7 @@ main {
     flex: 1;
     position: relative;
 }
-/* ----------왜 .select-wrap묶나..? */
+
 .sc-team .recruit-area .select-box select {
     position: relative;
     width: 100%;
