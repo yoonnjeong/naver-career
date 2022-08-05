@@ -137,6 +137,10 @@ $(function(){
             $('.mo-lnb').removeClass('active');
             $('body').removeClass('active');
         }
+        if(w > 1023 && $('.mo-gnb').hasClass('active')){
+            $('.mo-gnb').removeClass('active');
+            $('header .tab-wrap button').removeClass('btn-close');
+        }
     });
 
     $(window).trigger('resize');

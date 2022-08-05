@@ -650,15 +650,14 @@ main {
     background-color: #000;
 }
 @media screen and (max-width: 1408px) {
-    /* 1023까지잡혀야함 */
+    /* 1023*/
 
     .sc-benefit .txt-box .desc br{
         display: none;
     }
 }
 @media screen and (max-width: 1023px) {
-  /* 767까지잡혀야함 */
-  /* 테블릿 */
+  /* 767 */
 
     main {
         padding-top: 60px;
@@ -899,9 +898,7 @@ main {
     }
 
 }
-@media screen and (max-width: 767px) { 
-  /* 320까지잡혀야함 */
-  /* 모바일 ~ 더나와도됨 480 등등 필요하면 더 가능 */
+@media screen and (max-width: 767px) {
 
 
 
