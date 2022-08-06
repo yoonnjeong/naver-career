@@ -215,7 +215,7 @@ header .tab-wrap {
 
     display: none;
 }
-header .tab-wrap button {
+header .btn-tab {
     background-image: url(../images/sp_mo.png);
     background-size: 195px 181px;
     background-position: -85px -28px;
@@ -324,7 +324,7 @@ header .mognb-item.active .ic-arrow {
 header .mognb-item.active .mognb-depth2 {
     display: block;
 }
-header .tab-wrap button.btn-close {
+header .tab-wrap .btn-tab.btn-close {
     background-image: url(../images/sp_mo.png);
     background-size: 195px 181px;
     background-position: -85px -49px;

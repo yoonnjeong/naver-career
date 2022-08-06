@@ -45,7 +45,7 @@ $(function(){
 
 
 
-    $('.top-banner .btn-banner').click(function(){
+    $('.top-banner .btn-close-banner').click(function(){
         $('.top-banner').css('display','none');
     }); 
       
